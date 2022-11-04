@@ -1,11 +1,10 @@
+name: Build
 on:
-  release:
-    types: [created]
   push: 
     branches: [master]
     
 jobs:
-  release:
+  build:
     name: release ${{ matrix.target }}
     runs-on: ubuntu-latest
     strategy:
